@@ -7,11 +7,18 @@ body{
     margin-right: auto;
 }
 
+#container{
+background-color: white;
+margin:auto;
+padding-bottom: 10px;
+}
+
 #title{
     font-size: 60px;
     background-color: rgb(255, 247, 177);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     text-align: center;
     padding:10px;
 }
@@ -19,13 +26,14 @@ body{
 #description{
     align-items: center;
     background-color: aliceblue;
-    font-size: 35px;
+    font-size: 30px;
     width: 500px;
     height: auto;
     float:right;
     padding:20px;
     margin-right:20px;
     margin-top:20px;
+    margin-bottom: 100px;
 }
 
 #navigation{
@@ -63,25 +71,52 @@ li a:hover {
 
 #credits{
     font-size: 20px;
-    margin-top: 400px;
-    background-color: #555;
-    width:100%;
-    text-align: right;
-
-}
-
-#project{
     margin-top: 200px;
-    background-color: rgb(177, 59, 59);
-    margin-bottom: 20px;
-    float:
+    background-color: rgb(146, 146, 146);
+    width:100%-20px;
+    text-align: right;
+    padding-right:20px;
 }
 
-#project1{
-    margin-left: 50px;
+#pro{
+    max-width: 1200px;
+    min-width: 100%;
+    border-color: #000;
+    border: 1px solid;
+    margin-left:20px,20px;
 }
 
-#project2{
-    margin-right: 50px;
-    float: right;
+th{
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+#cert{
+    font-size: 20px;
+    margin-top:100px;
+    margin-left:20px;
+    width: 100%;
+
+}
+
+#certs{
+    margin-left: 30px;
+}
+
+#cert1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#pdis{
+    margin-top:20px;
+    font-size: 20px;
+    width: 100%-10px;
+    background-color: bisque;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 10px;
 }
