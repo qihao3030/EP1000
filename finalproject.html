@@ -58,9 +58,15 @@
 
     <h1>step 4: Including the other electronics</h1><br>
     To check if all the other electronics will fit, i imported the arduino and made a rought version of the stepper motor driver. I also include the holes for the power supply, push button, switch and some vent bars as i feel the stepper motor will get too warm. At this point, I did not realise i missed out on the holes for LDR and arduino board.
-    <br><img src="pictures/boxwithelectronic.jpg" height="300"class="center"><br>
+    <br><img src="pictures/boxwithelectronic.jpg" height="500"class="center"><br>
 
     <h1>step 5: creating the belt</h1><br>
+    the belt is created by finding the loop lenght around the driver gear and the parts that it will go around.
+    <img src="pictures/looplength.jpg" height="500"class="center"><br>
+    After finding the loop lenght, The belt can be created with the numbers accordingly.The belt is then cut in half to ensure it will fit on the 3d printer<br>
+    <img src="pictures/belt.jpg" height="300"class="center"><br>
+
+    
 
     <h1>step 6: laser cutting</h1><br>
     the parts that will be laser cut are the box and the front panel acrylic. which will be 7 pieces. To prepare for laser cutting, sketch surface is created on each sides and exported as DXF. All the sides will be cut out from 3mm ply wood except for the front panel which is clear acrylic.<br>
@@ -69,15 +75,22 @@
     <h1>step 7: 3d printing</h1><br>
     The motor holder and the belt will be 3d printed. To save time on supports, the motor holder will be printed in sections and then later on joined together.<br>
     <img src="pictures/cura.jpg" height="300"class="center"><img src="pictures/3dprinted.jpg" height="300"class="center"><br>
+    The belt is also printed at a single layer height and the numbers on the second layer. It is then joined together forming the loop<br>
+    <img src="pictures/belt1.jpg" height="600" class="center"><br>
 
     <h1>step 8: arduino cooding</h1><br>
     the coding part of this project is the hardest for me as i have little experience with arduino. As arduino is not able to do paralled computing, i cannot use the delay funtion for the clock as other program would not work when the clock is runnning.
     Thus the "millis" function is used, "millis" is basically the run time of the arduino board. To have a program count in minutes, the current time is set at the start and it will be compared to the run time of the arduino, when difference reached 60000, we know that 1 minute has passed and the motor for the minute is activated. to get the hour, a loop is created
-    counting created counting for the minute funtion to activate 60 times.<br><br>
+    counting created counting for the minute funtion to activate 12 times.<br><br>
     For the different mode of the neo pixle, I imported some funtions from the internet and used the led counter i previously made in thinkerCad.<br><br>
     step 9: testing the arduino code<br>
     First, i wired up the circuit using the bread board. When it worked, i transfered the circuit into the box and soldered the wires for the ldr, push button, power supply and neopixel. This is also the point where i realise i am missing the holes for the ldr and arduino port, so i just drilled the holes using a hand drill. the circuit works and its ready to proceed to the next step.<br>
     <img src="pictures/codetest1.jpg" height="300"class="center1"><br><img src="pictures/codetest2.jpg" height="300"class="center"><br>
+
+    <h1>step 9: Assemblying everything</h1><br>
+    The final step is to just put together everything. The box is glued together. I also painted the numbers on the belt as i felt it is hard to see.
+    <img src="pictures/final1.jpg" height="500"class="center1">
+
 
 
 </div>
