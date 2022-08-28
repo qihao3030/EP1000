@@ -27,56 +27,57 @@
         </div>
 
 
-<div id="proti">Belt-driven Clock</div>
-<div>
-    <br><br>for my final project, i will be making a belt-driven clock. This clock that i will be making is highly inspired by a beltdriven clock created by the company Devon Works.<br>
-    <img src="pictures/beltclock.jpg" height="300"><br>
+<div id="proti1">Belt-driven Clock</div>
+<div id="finalproj">
+    <br><br>For my final project, i will be making a belt-driven clock. This clock that i will be making is highly inspired by a beltdriven clock created by the company Devon Works.<br>
+    <img src="pictures/beltclock.jpg" height="300"class="center"><br>
     I started the project by creting a sketech of how I want my clock to look like and the rough dimensions of my clock.<br>
-    <img src="pictures/sketch.jpg" height="300"><br>
+    <img src="pictures/sketch.jpg" height="300"class="center"><br>
     Then, using cardboard, a prototype of my clock is made. <br>
-    <img src="pictures/cardboardprototype.jpg" height="300"><br>
+    <img src="pictures/cardboardprototype.jpg" height="300"class="center"><br>
 
     I also wanted my clock to have a lighting system which will can be controlled or acticated when it is dark. So i created a circuit using thinkerCad. Unfortunatly, thinkerCad does not have the stepper motor i am using, so i could not simulate the code on thinkerCad<br>
-    <img src="pictures/circuitdesign.jpg" height="300"><br>
+    <img src="pictures/circuitdesign.jpg" height="300"class="center"><br>
 
-    here is the bill of materials for the project.(prices change)<br>
-    <img src="pictures/bill.jpg" height="300"><br>
+    Here is the bill of materials for the project.(prices change)<br>
+    <img src="pictures/bill.jpg" height="300"class="center"><br>
 
-    now i can start designing the housing for the clock, i will be desining it in fusion360.<br>
-    step 1: creating the box<br>
+    Now i can start designing the housing for the clock, i will be desining it in fusion360.<br><br>
+
+    <h1>step 1: creating the box</h1><br>
     To create the box, I will be using the box with joints that i created in musical box. As i can change the parameters, here i decided to make it a little shoter and taller in height. 
-    i then created the front panel for the box which will include a clear acrylic.<br>
-    <img src="pictures/clockparameter.jpg" height="300" width="600"><img src="pictures/clockbox.jpg" height="300"><br>
-    step 2: designing the motor and belt holder<br>
+    I then created the front panel for the box which will include a clear acrylic.<br>
+    <img src="pictures/clockparameter.jpg" height="300" width="600"class="center"><img src="pictures/clockbox.jpg" height="300"class="center"><br>
+    <h1>step 2: designing the motor and belt holder</h1><br>
     To design the motor and belt holder, i created the stepper motor based on the dimensions i found online. I arranged the motor into the position that will move the belt, the holder is then created with the belt system.<br>
-    <img src="pictures/motorandbelt.jpg" height="300"><br>
+    <img src="pictures/motorandbelt.jpg" height="300"class="center"><br>
 
-    step 3: designing the belt puller<br>
+    <h1>step 3: designing the belt puller</h1><br>
     this part of the design is more of a trail and error for how many gears i would need. in the end, i ended up with this design.<br>
-    <img src="pictures/geardriver.jpg" height="300"><br>
+    <img src="pictures/geardriver.jpg" height="300"class="center"><br>
 
-    step 4: Including the other electronics<br>
+    <h1>step 4: Including the other electronics</h1><br>
     To check if all the other electronics will fit, i imported the arduino and made a rought version of the stepper motor driver. I also include the holes for the power supply, push button, switch and some vent bars as i feel the stepper motor will get too warm. At this point, I did not realise i missed out on the holes for LDR and arduino board.
-    <br><img src="pictures/boxwithelectronic.jpg" height="300"><br>
+    <br><img src="pictures/boxwithelectronic.jpg" height="300"class="center"><br>
 
-    step 5: creating the belt<br>
+    <h1>step 5: creating the belt</h1><br>
 
-    step 6: laser cutting<br>
+    <h1>step 6: laser cutting</h1><br>
     the parts that will be laser cut are the box and the front panel acrylic. which will be 7 pieces. To prepare for laser cutting, sketch surface is created on each sides and exported as DXF. All the sides will be cut out from 3mm ply wood except for the front panel which is clear acrylic.<br>
-    <img src="pictures/lasercut.jpg" height="300"><br>
+    <img src="pictures/lasercut.jpg" height="300"class="center"><br>
 
-    step 7: 3d printing<br>
-    the motor holder and the belt will be 3d printed. To save time on supports, the motor holder will be printed in sections and then later on joined together.<br>
-    <img src="pictures/cura.jpg" height="300"><img src="pictures/3dprinted.jpg" height="300"><br>
+    <h1>step 7: 3d printing</h1><br>
+    The motor holder and the belt will be 3d printed. To save time on supports, the motor holder will be printed in sections and then later on joined together.<br>
+    <img src="pictures/cura.jpg" height="300"class="center"><img src="pictures/3dprinted.jpg" height="300"class="center"><br>
 
-    step 8: arduino cooding<br>
+    <h1>step 8: arduino cooding</h1><br>
     the coding part of this project is the hardest for me as i have little experience with arduino. As arduino is not able to do paralled computing, i cannot use the delay funtion for the clock as other program would not work when the clock is runnning.
     Thus the "millis" function is used, "millis" is basically the run time of the arduino board. To have a program count in minutes, the current time is set at the start and it will be compared to the run time of the arduino, when difference reached 60000, we know that 1 minute has passed and the motor for the minute is activated. to get the hour, a loop is created
     counting created counting for the minute funtion to activate 60 times.<br><br>
-    For the different mode of the neo pixle, I imported some funtions from the internet and used the led counter i previously made in thinkerCad.<br>
+    For the different mode of the neo pixle, I imported some funtions from the internet and used the led counter i previously made in thinkerCad.<br><br>
     step 9: testing the arduino code<br>
     First, i wired up the circuit using the bread board. When it worked, i transfered the circuit into the box and soldered the wires for the ldr, push button, power supply and neopixel. This is also the point where i realise i am missing the holes for the ldr and arduino port, so i just drilled the holes using a hand drill. the circuit works and its ready to proceed to the next step.<br>
-    <img src="pictures/codetest1.jpg" height="300"><img src="pictures/codetest2.jpg" height="300"><br>
+    <img src="pictures/codetest1.jpg" height="300"class="center1"><br><img src="pictures/codetest2.jpg" height="300"class="center"><br>
 
 
 </div>
